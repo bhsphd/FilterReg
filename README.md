@@ -17,7 +17,7 @@ The code is developed on Ubuntu 16.04 with `CUDA-9` and `CUDA-10`. The tested co
 This repo depends on `pcl` and `opencv`. The default versions of both Ubuntu 16.04 and `ros-kinetic` have been tested. For Ubuntu 16.04, you can run the following command to install them
 
 ```shell
-sudo apt-get install libpcl-dev libopencv-dev python3-opencv
+sudo apt-get install libpcl-dev libopencv-dev
 ```
 
 This repo also depends on `glog` which can be installed by
