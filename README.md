@@ -4,4 +4,4 @@
 
 Video Demo [[Link]](<https://sites.google.com/view/filterreg/home>)
 
-![FitlerReg]()
+[![FilterReg](./doc/articulated.png)](https://www.youtube.com/watch?v=9a0eEscz1Cs)
