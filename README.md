@@ -1,32 +1,42 @@
 # [FilterReg](<https://sites.google.com/view/filterreg/home>)
 
-FilterReg is a geometric point-set registration algorithm. By leveraging Gaussian Filter for correspondence search and twist parametrization for kinematic computation, it achieves state-of-the-art robustness and efficiency.
+A reference implementation for the paper: 
 
-This repository contains a reference implementation of FilterReg and other geometric processing algorithms. This code aims at real-time tracking and geometric processing for robotic manipulation, visual odometry and SLAM (3D Reconstrution).
+Wei Gao and Russ Tedrake, "FilterReg: Robust and Efficient Probabilistic Point-Set Registration using Gaussian Filter and Twist Parameterization", CVPR 2019 (**Oral**)  [[Project]](<https://sites.google.com/view/filterreg/home>) [[Paper]](https://arxiv.org/abs/1811.10136) [[Supplemental]](https://drive.google.com/file/d/1R_E-v3vh7aq3uwg_EOmZEtItMn649rVI/view?usp=sharing)
+
+In addition to FilterReg, this repo contains the implementation of various geometric processing algorithms. This code aims at real-time tracking and geometric processing for robotic manipulation, visual odometry and SLAM (3D Reconstrution).
 
 ### Video Demo [[Link]](https://youtu.be/k-YQVZfM0qg)
 
 [![FilterReg](./doc/articulated.png)](https://youtu.be/k-YQVZfM0qg)
 
-### Project Page, Paper and Supplemental Document
-
-Project Page: [Link](<https://sites.google.com/view/filterreg/home>)
-
-Paper: [PDF](https://drive.google.com/file/d/1XLCAwkIRqnHFhYMx6hYf8LxN_IeozliZ/view?usp=sharing) [ArXiv](https://arxiv.org/abs/1811.10136)
-
-Supplemental Document: [PDF](https://drive.google.com/file/d/1R_E-v3vh7aq3uwg_EOmZEtItMn649rVI/view?usp=sharing)
-
 ### Build Instruction
 
-The code is developed on Ubuntu 16.04 with `CUDA-9` and `CUDA-10`. The tested compilers are `gcc-5.4` and `gcc-6.0`. Note that `gcc-5.5` is not supported by CUDA and may cause errors.
+The code is developed on Ubuntu 16.04 with `CUDA-9` and `CUDA-10`. The tested compilers are `gcc-5.4` and `gcc-6.0`. Note that `gcc-5.5` is not supported by CUDA and may cause errors. For the installation of CUDA, please follow the [official guide](<https://developer.nvidia.com/cuda-downloads>).
 
-You need to install `pcl` and `opencv`. The default versions of both Ubuntu 16.04 and `ros-kinetic` have been tested.
+This repo depends on `pcl` and `opencv`. The default versions of both Ubuntu 16.04 and `ros-kinetic` have been tested
+
+```shell
+sudo apt-get install libpcl-dev libopencv-dev python3-opencv
+```
 
 Several other utilies
 
+```shell
+sudo apt-get install libgoogle-glog-dev
+```
+
 Now you are ready to build
 
-Quick start
+```shell
+git clone https://gaowei19951004@bitbucket.org/gaowei19951004/poser-public.git
+cd ${project_root}
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make
+```
+
+The [`apps/rigid_pt2pt`](<https://sites.google.com/view/filterreg/home>) would be a good starting point. The test data is also included in that subdirectory.
 
 ### TODO
 
@@ -35,3 +45,7 @@ The code is re-factored from a pretty messy version which is the backbone of all
 - [ ] The GPU implementation of various algorithms
 - [ ] Revive the articulated kinematic model using the new MultiBodyTree in drake
 - [ ] The deformable kinematic model used in SurfelWarp
+
+### Contact
+
+If you have any question or suggestion regarding this work, please send an email to weigao@mit.edu
