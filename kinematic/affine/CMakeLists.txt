@@ -1,0 +1,5 @@
+file(GLOB AFFINE_KINEMATIC_SRC *.h *.hpp *.cpp *.cu)
+cuda_add_library(affine_kinematic_lib ${AFFINE_KINEMATIC_SRC})
+target_link_libraries(affine_kinematic_lib common_lib)
+target_link_libraries(affine_kinematic_lib geometry_utils_lib)
+target_link_libraries(affine_kinematic_lib kinematic_base_lib)

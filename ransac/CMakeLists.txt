@@ -1,0 +1,6 @@
+file(GLOB RANSAC_SRC *.h *.hpp *.cpp *.cu)
+cuda_add_library(ransac_lib ${RANSAC_SRC})
+target_link_libraries(ransac_lib common_lib)
+target_link_libraries(ransac_lib gmm_corr_lib)
+target_link_libraries(ransac_lib rigid_kinematic_lib)
+target_link_libraries(ransac_lib affine_kinematic_lib)

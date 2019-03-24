@@ -1,0 +1,6 @@
+file(GLOB DBG_VISUALIZER_SRC *.h *.cpp)
+add_library(dbg_visualizer_lib ${DBG_VISUALIZER_SRC})
+target_link_libraries(dbg_visualizer_lib common_lib)
+target_link_libraries(dbg_visualizer_lib geometry_utils_lib)
+target_link_libraries(dbg_visualizer_lib ${OpenCV_LIBRARIES})
+target_link_libraries(dbg_visualizer_lib ${PCL_LIBRARIES})
