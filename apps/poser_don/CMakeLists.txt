@@ -1,0 +1,16 @@
+#The yaml cpp library
+find_package(YamlCpp REQUIRED)
+include_directories(${YAMLCPP_INCLUDE_DIR})
+
+file(GLOB POSER_DON_APP_SRC *.h *.hpp *.cpp)
+add_executable(poser_don_app ${POSER_DON_APP_SRC})
+target_link_libraries(poser_don_app common_lib)
+target_link_libraries(poser_don_app dbg_visualizer_lib)
+target_link_libraries(poser_don_app imgproc_lib)
+target_link_libraries(poser_don_app cloudproc_lib)
+target_link_libraries(poser_don_app rigid_kinematic_lib)
+target_link_libraries(poser_don_app affine_kinematic_lib)
+target_link_libraries(poser_don_app nn_search_lib)
+target_link_libraries(poser_don_app gmm_corr_lib)
+target_link_libraries(poser_don_app ransac_lib)
+target_link_libraries(poser_don_app ${YAMLCPP_LIBRARY})

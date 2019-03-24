@@ -1,0 +1,8 @@
+add_executable(rigid_pt2pt main.cpp)
+target_link_libraries(rigid_pt2pt common_lib)
+target_link_libraries(rigid_pt2pt dbg_visualizer_lib)
+target_link_libraries(rigid_pt2pt imgproc_lib)
+target_link_libraries(rigid_pt2pt cloudproc_lib)
+target_link_libraries(rigid_pt2pt rigid_kinematic_lib)
+target_link_libraries(rigid_pt2pt nn_search_lib)
+target_link_libraries(rigid_pt2pt gmm_corr_lib)

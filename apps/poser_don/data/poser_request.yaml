@@ -1,0 +1,20 @@
+shoe_1:
+  template: /home/wei/Coding/poser/data/descriptor_template.pcd
+  image_1:
+    descriptor_img: /home/wei/data/pdc/logs_shoes/2018-11-16-20-44-48/processed/descriptor_images/shoes_consistent_M_background_0.500_3_15K_training/000000_descriptor.npy
+    rgb_img: /home/wei/data/pdc/logs_shoes/2018-11-16-20-44-48/processed/images/000000_rgb.png
+    depth_img: /home/wei/data/pdc/logs_shoes/2018-11-16-20-44-48/processed/images/000000_depth.png
+    mask_img: /home/wei/data/pdc/logs_shoes/2018-11-16-20-44-48/processed/image_masks/000000_mask.png
+    save_processed_cloud: /home/wei/Coding/poser/data/processed_cloud_world.ply
+    save_template: /home/wei/Coding/poser/data/template.ply
+    visualize: 1
+    camera_to_world:
+      quaternion:
+        w: 0.11955521666256178
+        x: -0.7072223465820128
+        y: 0.6767424859550267
+        z: -0.16602021071908557
+      translation:
+        x: 0.29710354158229585
+        y: -0.008081499080098517
+        z: 0.8270976316822616

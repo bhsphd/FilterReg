@@ -1,0 +1,4 @@
+add_executable(imgproc_app main.cpp)
+target_link_libraries(imgproc_app common_lib)
+target_link_libraries(imgproc_app dbg_visualizer_lib)
+target_link_libraries(imgproc_app imgproc_lib)
