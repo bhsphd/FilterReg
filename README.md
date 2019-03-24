@@ -2,6 +2,8 @@
 
 FilterReg is a geometric point-set registration algorithm. By leveraging Gaussian Filter for correspondence search and twist parametrization for kinematic computation, it achieves state-of-the-art robustness and efficiency.
 
+This repository contains a reference implementation of FilterReg and other geometric processing algorithms. This code aims at real-time tracking and geometric processing for robotic manipulation, visual odometry and SLAM (3D Reconstrution).
+
 ### Video Demo [[Link]](https://youtu.be/k-YQVZfM0qg)
 
 [![FilterReg](./doc/articulated.png)](https://youtu.be/k-YQVZfM0qg)
