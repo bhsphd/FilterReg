@@ -46,6 +46,12 @@ The code is re-factored from a pretty messy version which is the backbone of all
 - [ ] Revive the articulated kinematic model using the new MultiBodyTree in drake.
 - [ ] The deformable kinematic model is currently in another repo (SurfelWarp).
 
+### FAQ
+
+- How to switch the compiler to `gcc-6` in `cmake`?
+
+  Run `source use_gcc6` before any `cmake` command. You might need to remove the `CMakeCache.txt` in your build directory.
+
 ### Contact
 
 If you have any question or suggestion regarding this work, please send an email to weigao@mit.edu
