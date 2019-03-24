@@ -16,7 +16,15 @@ Supplemental Document: [PDF](https://drive.google.com/file/d/1R_E-v3vh7aq3uwg_EO
 
 ### Build Instruction
 
-The code is developed on Ubuntu 16.04, tested with `CUDA-9` and `CUDA-10`. The tested compilers are `gcc-5.4` and `gcc-6.0`. Note that `gcc-5.5` is not supported by CUDA yet and may causes erros.
+The code is developed on Ubuntu 16.04, tested with `CUDA-9` and `CUDA-10`. The tested compilers are `gcc-5.4` and `gcc-6.0`. Note that `gcc-5.5` is not supported by CUDA and may causes erros.
+
+You need to install `pcl` and `opencv`. The default versions of both Ubuntu 16.04 and `ros-kinetic` are OK.
+
+Several other utilies
+
+Now you are ready to build
+
+Quick start
 
 ### TODO
 
