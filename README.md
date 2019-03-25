@@ -29,7 +29,7 @@ sudo apt-get install libgoogle-glog-dev
 Now you are ready to build
 
 ```shell
-git clone https://gaowei19951004@bitbucket.org/gaowei19951004/poser-public.git
+git clone https://gaowei19951004@bitbucket.org/gaowei19951004/poser.git
 cd ${project_root}
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
