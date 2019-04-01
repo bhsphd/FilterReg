@@ -12,7 +12,7 @@ In addition to FilterReg, this repo (which I call it "poser") contains the infra
 
 ### Build Instruction
 
-The code is developed on Ubuntu 16.04 with `CUDA-9` and `CUDA-10`. The tested compilers are `gcc-5.4`, `gcc-6.0` and `gcc-6.5`. Note that `gcc-5.5` is not supported by CUDA and may cause errors. For the installation of CUDA, please follow the [official guide](<https://developer.nvidia.com/cuda-downloads>).
+The code is developed on Ubuntu 16.04 with `CUDA-9` and `CUDA-10`. The tested compilers are `gcc-5.4`, `gcc-6.0` and `gcc-6.5`. For the installation of CUDA, please follow the [official guide](<https://developer.nvidia.com/cuda-downloads>).
 
 This repo depends on `pcl` and `opencv`. The default versions of both Ubuntu 16.04 and `ros-kinetic` have been tested. For Ubuntu 16.04, you can run the following command to install them
 
