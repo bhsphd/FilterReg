@@ -2,7 +2,7 @@
 
 A reference implementation for the paper: 
 
-Wei Gao and Russ Tedrake, "FilterReg: Robust and Efficient Probabilistic Point-Set Registration using Gaussian Filter and Twist Parameterization", CVPR 2019 (**Oral**)  [[Project]](<https://sites.google.com/view/filterreg/home>) [[Paper]](https://arxiv.org/abs/1811.10136) [[Supplemental]](https://drive.google.com/file/d/1R_E-v3vh7aq3uwg_EOmZEtItMn649rVI/view?usp=sharing)
+Wei Gao and Russ Tedrake, "FilterReg: Robust and Efficient Probabilistic Point-Set Registration using Gaussian Filter and Twist Parameterization", CVPR 2019 (**Best Paper Finalist**)  [[Project]](<https://sites.google.com/view/filterreg/home>) [[Paper]](https://arxiv.org/abs/1811.10136) [[Supplemental]](https://drive.google.com/file/d/1R_E-v3vh7aq3uwg_EOmZEtItMn649rVI/view?usp=sharing)
 
 In addition to FilterReg, this repo (which I call it "poser") contains the infrastructure and implementation of various geometric processing algorithms. This repo aims at real-time tracking and geometric processing for robotic manipulation, visual odometry and SLAM (3D Reconstrution).
 
